@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Baloo 2', cursive;
   line-height: 1.6;
-  background: #f0f2f5; /* 淡い背景色 */
-  color: #444;
+  background: #fffbf0; /* 明るいパステルイエロー */
+  color: #333;
 }
 
 /* コンテナ */
@@ -22,22 +22,22 @@ body {
 /* ヘッダー */
 header {
   background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   margin-bottom: 40px;
   padding: 20px 0;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 header h1 {
-  font-size: 28px;
-  color: #0077cc;
+  font-size: 30px;
+  color: #ff6f61; /* ポップオレンジ */
   margin-bottom: 10px;
 }
 header nav a {
-  color: #00a991; /* 柔らかグリーン */
+  color: #42a5f5; /* 明るい青 */
   text-decoration: none;
   margin: 0 10px;
-  font-weight: 500;
+  font-weight: 600;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -49,8 +49,8 @@ header nav a:hover {
   margin-bottom: 50px;
 }
 .hero h2 {
-  font-size: 24px;
-  color: #ff7f50; /* 柔らかいオレンジアクセント */
+  font-size: 26px;
+  color: #ffca28; /* パステルイエロー */
   margin-bottom: 15px;
 }
 .hero p {
@@ -60,15 +60,19 @@ header nav a:hover {
 
 /* 施工事例カード */
 .work-item {
-  background: #fffaf0; /* 淡いクリーム色 */
+  background: #ffffff;
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.work-item:hover {
+  transform: translateY(-5px);
 }
 .work-item h2 {
   font-size: 22px;
-  color: #0077cc;
+  color: #ff6f61; /* ポップオレンジ */
   margin-bottom: 15px;
 }
 
@@ -83,22 +87,24 @@ header nav a:hover {
 .images img {
   width: 100%;
   max-width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
 /* ボタン */
 .button {
   display: inline-block;
-  padding: 12px 24px;
-  background: #00a991;
+  padding: 14px 28px;
+  background: #42a5f5; /* 明るい青 */
   color: #fff;
   text-decoration: none;
-  border-radius: 12px;
-  transition: background 0.3s;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
 }
 .button:hover {
-  background: #007f6e;
+  background: #1e88e5;
+  transform: scale(1.05);
 }
 
 /* フッター */
@@ -107,6 +113,6 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
-  border-radius: 12px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  border-radius: 20px;
 }
