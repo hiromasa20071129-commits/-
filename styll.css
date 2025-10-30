@@ -1,59 +1,92 @@
-body {
-  font-family: "Noto Sans JP", sans-serif;
+/* リセット・基本 */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
-  background: #fff;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
   color: #333;
 }
 
-header, footer {
-  background: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-}
-
-nav {
-  text-align: center;
-  margin: 10px 0;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #0077cc;
-}
-
-.main, section {
-  padding: 20px;
-  max-width: 900px;
+/* コンテナ */
+.container {
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 40px 20px;
 }
 
-.images img {
-  width: 30%;
-  margin: 1%;
+/* ヘッダー */
+header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  padding: 20px 0;
+  text-align: center;
 }
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 8px;
+header h1 {
+  font-size: 28px;
   margin-bottom: 10px;
 }
+header nav a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
 
-form button {
-  padding: 10px 20px;
+/* セクション */
+.work-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.work-item h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* 画像 */
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ボタン（必要なら） */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
   background: #0077cc;
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.button:hover {
+  background: #005fa3;
+}
+
+/* フッター */
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
 }
