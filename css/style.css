@@ -8,7 +8,7 @@
 body {
   font-family: 'Baloo 2', cursive;
   line-height: 1.6;
-  background: #fffbf0; /* 明るいパステルイエロー */
+  background: #fffbf0;
   color: #333;
 }
 
@@ -28,31 +28,36 @@ header {
   text-align: center;
   border-radius: 20px;
 }
+
 header h1 {
   font-size: 30px;
-  color: #ff6f61; /* ポップオレンジ */
+  color: #ff6f61;
   margin-bottom: 10px;
 }
+
 header nav a {
-  color: #42a5f5; /* 明るい青 */
+  color: #42a5f5;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 600;
 }
+
 header nav a:hover {
   text-decoration: underline;
 }
 
-/* ヒーローセクション */
+/* ヒーロー */
 .hero {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .hero h2 {
   font-size: 26px;
-  color: #ffca28; /* パステルイエロー */
+  color: #ffca28;
   margin-bottom: 15px;
 }
+
 .hero p {
   font-size: 16px;
   margin-bottom: 20px;
@@ -67,12 +72,14 @@ header nav a:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s;
 }
+
 .work-item:hover {
   transform: translateY(-5px);
 }
+
 .work-item h2 {
   font-size: 22px;
-  color: #ff6f61; /* ポップオレンジ */
+  color: #ff6f61;
   margin-bottom: 15px;
 }
 
@@ -84,6 +91,7 @@ header nav a:hover {
   gap: 15px;
   margin-bottom: 15px;
 }
+
 .images img {
   width: 100%;
   max-width: 300px;
@@ -95,16 +103,57 @@ header nav a:hover {
 .button {
   display: inline-block;
   padding: 14px 28px;
-  background: #42a5f5; /* 明るい青 */
+  background: #42a5f5;
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
   transition: transform 0.2s, background 0.3s;
 }
+
 .button:hover {
   background: #1e88e5;
   transform: scale(1.05);
+}
+
+/* お問い合わせフォーム */
+.contact-form {
+  background: #fffaf0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 50px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ff6f61;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px 12px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 2px solid #ffca28;
+  font-size: 16px;
+  font-family: 'Baloo 2', cursive;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 8px rgba(66,165,245,0.4);
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
 }
 
 /* フッター */
